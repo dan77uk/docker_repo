@@ -7,4 +7,5 @@ jobs:
     steps:
       - name: test
         run: |
+          docker login
           docker container run -d -p 8080:80 test:1
