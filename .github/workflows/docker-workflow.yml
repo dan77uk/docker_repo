@@ -7,5 +7,5 @@ jobs:
     steps:
       - name: test
         run: |
-          docker pull docker_repo/Dockerfile
+          docker pull docker_repo
           docker container run -d -p 8080:80 test:1
