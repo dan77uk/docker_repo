@@ -10,3 +10,5 @@ jobs:
         run: |
           docker image build . -t test
           docker run -d -p 8080:80 test:latest
+      - name: Test App
+        run: curl -v http://localhost:8080
